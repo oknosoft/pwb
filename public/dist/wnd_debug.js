@@ -800,7 +800,8 @@ $p.doc.calc_order.form_list = function(pwnd, attr, handlers){
             {id: 'warehouse', path: 'o.warehouse', synonym: 'Склад отгрузки', type: 'refc'},
           ],
           'Итоги': [
-            {id: 'weight', path: 'o.weight', synonym: 'Масса изделий', type: 'ron', txt: o.weight},
+            {id: 'weight', path: 'o.weight', synonym: 'Масса изделий, кг', type: 'ron', txt: o.weight},
+            {id: 'areas', path: 'o.areas', synonym: 'Площадь изделий, м²', type: 'ro', txt: o.areas},
             {id: 'doc_currency', path: 'o.doc_currency', synonym: 'Валюта документа', type: 'ro', txt: o['doc_currency'].toString()},
             {id: 'doc_amount', path: 'o.doc_amount', synonym: 'Сумма', type: 'ron', txt: o.doc_amount},
             {id: 'amount_internal', path: 'o.amount_internal', synonym: 'Сумма внутр', type: 'ron', txt: o.amount_internal},
@@ -865,16 +866,7 @@ $p.doc.calc_order.form_list = function(pwnd, attr, handlers){
                 columns: ",,,,#stat_t,,,#stat_s,,,,,#stat_t,,,#stat_t",
                 _in_header_stat_s (tag, index, data) {
                   const calck = function () {
-                    const sum = {prod: 0, all: 0};
-                    for(const row of o.production) {
-                      sum.all += row.s * row.quantity;
-                      if(row.characteristic.leading_product.calc_order !== o) {
-                        sum.prod += row.s * row.quantity;
-                      }
-                    }
-                    return sum.prod === sum.all ?
-                      sum.prod.round(2).toLocaleString('ru-RU') :
-                      `${sum.prod.round(1).toLocaleString('ru-RU')}/${sum.all.round(1).toLocaleString('ru-RU')}`;
+                    return o.areas;
                   };
                   this._stat_in_header(tag, calck, index, data);
                 },

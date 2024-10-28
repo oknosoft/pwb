@@ -11,7 +11,7 @@ const dkey = new Date().toJSON().substring(0, 10);
 export default function () {
   skipWaiting();
 
-  const revision = '20241002';
+  const revision = '20241003';
   const persistent = '20240000';
 
   precacheAndRoute([
