@@ -11,25 +11,21 @@ import PropTypes from 'prop-types';
 import PropField from 'metadata-react/DataField/PropField';
 import LinkedProp from 'wb-forms/dist/Common/LinkedProp';
 
-class GlassLayerProps extends React.Component {
-
-  render() {
-    const {elm, row, inset} = this.props;
-    if (!elm || !row) {
-      return null;
-    }
-
-    const _obj = elm.region(row);
-    const {fields} = _obj._metadata;
-    const {clr} = fields;
-    $p.cat.clrs.selection_exclude_service(clr, inset, elm.ox);
-    const content = [<PropField fullWidth key={`clr-${inset.ref}-${row.row}`} _obj={_obj} _fld="clr" _meta={clr} empty_text="Авто"/>];
-    for (const prm of inset.used_params()) {
-      const {ref} = prm;
-      content.push(<LinkedProp key={`${ref}-${row.row}`} param={prm} _obj={_obj} _fld={ref} fields={fields}/>);
-    }
-    return content;
+function GlassLayerProps ({elm, row, inset}) {
+  if (!elm || !row) {
+    return null;
   }
+
+  const _obj = elm.region(row);
+  const {fields} = _obj._metadata;
+  const {clr} = fields;
+  $p.cat.clrs.selection_exclude_service(clr, inset, elm.ox);
+  const content = [<PropField fullWidth key={`clr-${inset.ref}-${row.row}`} _obj={_obj} _fld="clr" _meta={clr} empty_text="Авто"/>];
+  for (const prm of inset.used_params()) {
+    const {ref} = prm;
+    content.push(<LinkedProp key={`${ref}-${row.row}`} param={prm} _obj={_obj} _fld={ref} fields={fields}/>);
+  }
+  return content;
 }
 
 export default GlassLayerProps;
