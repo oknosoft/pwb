@@ -538,7 +538,7 @@ class Editor extends $p.EditorInvisible {
 
       // проверяем ортогональность
       if(project.getItems({class: $p.EditorInvisible.Profile}).some((p) => {
-        return (p.angle_hor % 90) > 0.02;
+        return (p.angle_hor % 90) > 0.01;
       })){
         this._ortpos.style.display = '';
       }
@@ -567,7 +567,7 @@ class Editor extends $p.EditorInvisible {
 
   show_ortpos(hide) {
     for (const elm of this.project.getItems({class: $p.EditorInvisible.Profile})) {
-      if((elm.angle_hor % 90) > 0.02) {
+      if((elm.angle_hor % 90) > 0.01) {
         if(hide) {
           elm.path.fillColor = $p.EditorInvisible.BuilderElement.clr_by_clr.call(elm, elm._row.clr);
         }
