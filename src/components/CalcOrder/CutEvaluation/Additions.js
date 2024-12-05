@@ -94,12 +94,14 @@ class Additions extends React.Component {
     for(const {nom, characteristic, len} of tmp.cuts) {
       const crow = tmp.cutting.find({nom, characteristic});
       if(crow && len > crow.len) {
-        if(attr?.calck) {
-          // строка потребности всего заказа
-          const frow = characteristic instanceof CatClrs ?
-            full.specification.find({nom, clr: characteristic}) :
-            full.specification.find({nom, nom_characteristic: characteristic});
-          if(frow) {
+        // строка потребности всего заказа
+        const frow = characteristic instanceof CatClrs ?
+          full.specification.find({nom, clr: characteristic}) :
+          full.specification.find({nom, nom_characteristic: characteristic});
+        if(frow) {
+          // общая дельта
+          const adelta = (len / 1000) - frow.quantity;
+          if(attr?.calck) {
             for(const orow of calc_order.production) {
               if(orow.characteristic.calc_order === calc_order) {
                 // строка потребности текущего изделия
@@ -112,8 +114,7 @@ class Additions extends React.Component {
                   curr.specification.find({nom, clr: characteristic}) :
                   curr.specification.find({nom, nom_characteristic: characteristic});
                 if(ccrow) {
-                  // общая дельта
-                  const adelta = (len / 1000) - frow.quantity;
+
                   // взвешенная дельта в единицах хранения
                   const ddelta = (adelta * ccrow.quantity / frow.quantity) / (orow.quantity || 1);
 
@@ -143,11 +144,13 @@ class Additions extends React.Component {
               }
             }
           }
-        }
-        else {
-          const orow = calc_order.production.add({nom, characteristic, qty: 1, changed: 3});
-          orow.quantity = ((len - crow.len) / 1000).round(3);
-          production?.refresh_row(orow);
+          else {
+            if(adelta > 0) {
+              const orow = calc_order.production.add({nom, characteristic, qty: 1, changed: 3});
+              orow.quantity = adelta.round(3);
+              production?.refresh_row(orow);
+            }
+          }
         }
       }
     }
