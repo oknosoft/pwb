@@ -1026,13 +1026,18 @@ class Editor extends $p.EditorInvisible {
 
 
       ], onclick: function (name) {
+        function fin() {
+          _editor?.activate?.();
+          pwnd?.progressOff?.();
+        }
         switch (name) {
 
         case 'save_close':
           if(_editor.project) {
             Promise.resolve(pwnd.progressOn())
               .then(() => _editor.project.save_coordinates({save: true, close: true}))
-              .catch(() => pwnd.progressOff && pwnd.progressOff());
+              .then(fin)
+              .catch(fin);
           }
           break;
 
@@ -1042,16 +1047,10 @@ class Editor extends $p.EditorInvisible {
 
         case 'calck':
           if(_editor.project) {
-            pwnd.progressOn();
-            Promise.resolve()
+            Promise.resolve(pwnd.progressOn())
               .then(() => _editor.project.save_coordinates({save: true}))
-              .then(() => {
-                pwnd.progressOff && setTimeout(() => {
-                  _editor.activate();
-                   pwnd.progressOff();
-                }, 700);
-              })
-              .catch(() => pwnd.progressOff && pwnd.progressOff());
+              .then(fin)
+              .catch(fin);
           }
           break;
 

@@ -1,3 +1,5 @@
+// Подключение редактора и форматтера к полю ввода табчасти параметров
+
 import CompoundFormatter from './Formatter';
 import CompoundEditor from './Editor';
 
