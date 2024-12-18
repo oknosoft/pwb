@@ -1330,7 +1330,7 @@ class Editor extends $p.EditorInvisible {
       });
 
       const btns = ['stamp', 'save_close', 'calck', 'open_spec'];
-      if(project.ox.calc_order.is_read_only) {
+      if(project.is_read_only || project.ox.calc_order.is_read_only) {
         for(const btn of btns) {
           tb_top.buttons[btn].classList.add('disabledbutton');
         }
