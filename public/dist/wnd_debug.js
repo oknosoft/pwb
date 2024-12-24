@@ -2476,6 +2476,24 @@ class OSvgs {
               const {ref, svg} = characteristic;
               if(!characteristic.is_new() && svg) {
                 keys.push({ref, svg});
+                if(characteristic.leading_product.empty()) {
+                  if($p.job_prm.builder.separate_frame_layers) {
+                    const contours = characteristic.constructions.find_rows({parent: 0}).map(v => v._row);
+                    if(contours.length > 1) {
+                      let min = Infinity, root;
+                      for(const layer of contours) {
+                        if(layer.cnstr < min) {
+                          min = layer.cnstr;
+                          root = layer;
+                        }
+                      }
+                      const {svg} = root.dop;
+                      if(svg) {
+                        keys.push({ref, svg});
+                      }
+                    }
+                  }
+                }
               }
               else if(!characteristic.empty()) {
                 if(characteristic.is_new() || characteristic.coordinates.count()) {
