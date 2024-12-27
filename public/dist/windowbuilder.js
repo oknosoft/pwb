@@ -1035,6 +1035,7 @@ class Editor extends $p.EditorInvisible {
         case 'save_close':
           if(_editor.project) {
             Promise.resolve(pwnd.progressOn())
+              .then(() => _editor._acc.tabbar._setTabActive('lay'))
               .then(() => _editor.project.save_coordinates({save: true, close: true}))
               .then(fin)
               .catch(fin);
@@ -1048,6 +1049,7 @@ class Editor extends $p.EditorInvisible {
         case 'calck':
           if(_editor.project) {
             Promise.resolve(pwnd.progressOn())
+              .then(() => _editor._acc.tabbar._setTabActive('lay'))
               .then(() => _editor.project.save_coordinates({save: true}))
               .then(fin)
               .catch(fin);
@@ -1055,7 +1057,7 @@ class Editor extends $p.EditorInvisible {
           break;
 
         case 'stamp':
-          _editor._acc.tabbar.callEvent('onSelect', ['lay']);
+          _editor._acc.tabbar._setTabActive('lay');
           Promise.resolve().then(() => _editor.open_templates());
           break;
 
