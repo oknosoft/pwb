@@ -1,13 +1,13 @@
 {
   "name": "windowbuilder",
-  "version": "2.1.266",
+  "version": "2.1.268",
   "description": "Order dealer for windows and stained glass",
   "repository": {
     "type": "git",
     "url": "https://github.com/oknosoft/windowbuilder.git"
   },
   "engines": {
-    "node": ">=16.13",
+    "node": ">=20.11",
     "yarn": "^1.22"
   },
   "keywords": [
@@ -25,7 +25,7 @@
     "url": "https://github.com/oknosoft/windowbuilder/issues"
   },
   "homepage": "https://light.oknosoft.ru/",
-  "proxy": "https://develop.ecookna.ru/",
+  "proxy1": "https://develop.ecookna.ru/",
   "proxy2": "https://start.ecookna.ru/",
   "proxy3": "https://start.phototech.ru/",
   "proxy4": "https://zakaz.kaleva.ru:2019/",
@@ -33,18 +33,18 @@
   "proxy6": "http://localhost:3016/",
   "proxy7": "https://quick.ecookna.ru/",
   "proxy8": "https://start.kaleva.ru/",
-  "proxy9": "https://brusnika.oknosoft.ru:2210/",
+  "proxy": "https://brusnika.oknosoft.ru:2210/",
   "proxy10": "https://brusnika.oknosoft.ru:2227/",
   "proxy11": "https://start.phototech.ru/",
   "proxy12": "https://tg.oknosoft.ru:2310/",
   "proxy13": "https://steklotorg.oknosoft.ru:2310/",
   "dependencies": {
-    "@turf/points-within-polygon": "^6.5",
+    "@turf/points-within-polygon": "^7.1",
     "dxf-writer": "^1.18",
     "md5-file": "^5.0",
-    "metadata-dhtmlx": "2.0.34-beta.2",
-    "metadata-react": "2.0.34-beta.2",
-    "metadata-redux": "2.0.34-beta.2",
+    "metadata-dhtmlx": "2.0.36-beta.1",
+    "metadata-react": "2.0.36-beta.1",
+    "metadata-redux": "2.0.36-beta.1",
     "react-highlight-words": "^0.20",
     "react-treebeard": "^3.2.4",
     "wb-core": "github:oknosoft/windowbuilder-core#b54d0031c51e80144a6236290a2e9ec264de3e14",
