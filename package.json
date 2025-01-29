@@ -118,7 +118,7 @@
     "workbox-webpack-plugin": "^6.4.1",
     "xlsx": "^0.18.5"
   },
-  "packageManager": "^yarn@1.22",
+  "packageManager": "yarn@1.22.22",
   "files": [
     "LICENSE",
     "LICENSE.ru.md"
