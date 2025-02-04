@@ -158,9 +158,10 @@ class ToolCoordinates extends ToolElement{
     }
     else {
       this.grid = new Editor.GridCoordinates({
+        parent: this.project.l_dimensions,
         step: this.dp.step,
         offset: this.dp.offset,
-        angle: this.dp.angle,
+        angle: this.dp.step_angle,
         bind: this.dp.bind.valueOf(),
       });
     }
