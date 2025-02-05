@@ -16,7 +16,7 @@ const defaultOpen = {
 const OpenContext = React.createContext(defaultOpen);
 export const useOpenContext = () => React.useContext(OpenContext);
 
-export default function OpenContextProvider(props) {
+export default function OpenContextProvider({key, ...props}) {
   const [open, setOpen] = React.useState(defaultOpen);
   const openChange = React.useMemo(() => (newState) => {
     setOpen(prevState => ({...prevState, ...newState}));
@@ -24,6 +24,6 @@ export default function OpenContextProvider(props) {
   }, []);
 
   return <OpenContext.Provider value={{ open, openChange }}>
-    <ControlsFrame {...props}/>
+    <ControlsFrame key={key} {...props}/>
   </OpenContext.Provider>;
 }

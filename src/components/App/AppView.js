@@ -86,7 +86,6 @@ class AppRoot extends Component {
     }
 
     const auth_props = {
-      key: 'auth',
       handleNavigate,
       handleIfaceState,
       handleLock,
@@ -109,6 +108,7 @@ class AppRoot extends Component {
       // основной контент или заставка загрузки или приглашение к авторизации
       need_auth || idle ?
         <NeedAuth
+          key="auth"
           {...auth_props}
           ComponentLogin={FrmLogin}
         />

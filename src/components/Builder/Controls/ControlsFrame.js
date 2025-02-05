@@ -130,8 +130,7 @@ class ControlsFrame extends React.Component {
 
       switch (type) {
       case 'elm':
-        other.key = `elm-${elm?.elm}`;
-        panel = <ElmProps {...other}/>;
+        panel = <ElmProps key={`elm-${elm?.elm}`} {...other}/>;
         break;
       case 'pair':
         panel = elm.every((elm) => elm instanceof Filling) ? <GlassProps {...other}/> : <PairProps {...other}/>;
