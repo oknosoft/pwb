@@ -963,8 +963,8 @@
             not_production();
           }
           else if(row.characteristic.coordinates.count()) {
-            const json = JSON.stringify(utils._mixin({}, row.characteristic._obj, [],
-              'ref,_rev,name,calc_order,product,leading_product,leading_elm,origin,partner,department,specification,svg'.split(',')));
+            const json = JSON.stringify(utils._mixin({class_name: row.characteristic.class_name}, row.characteristic._obj, [],
+              'ref,_rev,branch,name,calc_order,product,leading_product,leading_elm,origin,partner,department,specification,svg,class_name'.split(',')));
             navigator.clipboard.writeText(json)
               .then(() => dialogs.alert({
                 title: 'Экспорт данных',
