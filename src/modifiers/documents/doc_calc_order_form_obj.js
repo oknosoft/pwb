@@ -162,7 +162,9 @@
         read_only: wnd.elmnts.ro,
         oxml: {
           'Налоги': ['vat_consider', 'vat_included'],
-          'Аналитика': ['project',
+          'Аналитика': [
+            {id: 'branch', path: 'o.branch', synonym: 'Отдел', type: 'ro'},
+            'project',
             {id: 'organization', path: 'o.organization', synonym: 'Организация', type: 'refc'},
             {id: 'contract', path: 'o.contract', synonym: 'Договор', type: 'refc'},
             {id: 'bank_account', path: 'o.bank_account', synonym: 'Счет организации', type: 'refc'},
