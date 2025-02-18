@@ -160,12 +160,16 @@ class Magnetism {
             p0 = rNext.getNearestPoint(segm.profile[be]);
           }
           const delta = p0.subtract(ps);
-          selected.profile.move_points(delta, true);
-          for(const node of ['b', 'e']) {
-            try {
-              selected.profile.do_sub_bind(selected.profile.rays[node].profile, node);
+          if(delta.length) {
+            selected.profile.move_points(delta, true);
+            for(const node of ['b', 'e']) {
+              try {
+                selected.profile.do_sub_bind(selected.profile.rays[node].profile, node);
+              }
+              catch (e) {}
             }
-            catch (e) {}
+            selected.profile.insertBelow(prev.profile);
+            selected.profile.insertBelow(next.profile);
           }
         }
         else {

@@ -8,330 +8,6 @@
   }
 }(this, function() {
 $p.injected_data._mixin({"toolbar_calc_order_production.xml":"<?xml version=\"1.0\" encoding='utf-8'?>\n<toolbar>\n  <item id=\"sep0\" type=\"separator\"/>\n\n  <item type=\"buttonSelect\" id=\"bs_grp_add\" text=\"&lt;i class='fa fa-plus-circle fa-fw'&gt;&lt;/i&gt;\" title=\"Добавить строку заказа\" openAll=\"true\" >\n    <item type=\"button\" id=\"btn_add_builder\" text=\"&lt;i class='fa fa-object-ungroup fa-fw'&gt;&lt;/i&gt; Изделие построителя\" />\n    <item type=\"button\" id=\"btn_add_product\" text=\"&lt;i class='fa fa-gavel fa-fw'&gt;&lt;/i&gt; Продукцию или услугу\" />\n    <item type=\"button\" id=\"btn_add_material\" text=\"&lt;i class='fa fa-cube fa-fw'&gt;&lt;/i&gt; Материал\" />\n    <item type=\"button\" id=\"btn_additions\" text=\"&lt;i class='fa fa-cart-plus fa-fw'&gt;&lt;/i&gt; Аксессуары и услуги\" />\n    <item type=\"button\" id=\"btn_jalousie\" text=\"&lt;i class='fa fa-sun-o fa-fw'&gt;&lt;/i&gt; Жалюзи\" />\n    <item type=\"button\" id=\"btn_clone\" text=\"&lt;i class='fa fa-clone fa-fw'&gt;&lt;/i&gt; Скопировать изделие\" />\n    <item id=\"sep_prod\" type=\"separator\"/>\n    <item type=\"button\" id=\"btn_recalc_row\" text=\"&lt;i class='fa fa-repeat fa-fw'&gt;&lt;/i&gt; Пересчитать строку\" />\n    <item type=\"button\" id=\"btn_recalc_doc\" text=\"&lt;i class='fa fa-repeat fa-fw'&gt;&lt;/i&gt; Пересчитать заказ\" />\n    <item type=\"button\" id=\"btn_prod_export\" text=\"&lt;i class='fa fa-download fa-fw fa-fw'&gt;&lt;/i&gt; Выгрузить в буфер обмена\" />\n    <item type=\"button\" id=\"btn_prod_import\" text=\"&lt;i class='fa fa-upload fa-fw fa-fw'&gt;&lt;/i&gt; Загрузить из буфера\" />\n    <item type=\"button\" id=\"btn_change_recalc\" text=\"&lt;i class='fa fa-random fa-fw'&gt;&lt;/i&gt; Пересчитать с заменой параметров\" />\n  </item>\n\n  <item type=\"button\" id=\"btn_edit\" text=\"&lt;i class='fa fa-object-ungroup fa-fw'&gt;&lt;/i&gt;\" title=\"Редактировать изделие построителя\" />\n  <item type=\"button\" id=\"btn_spec\" text=\"&lt;i class='fa fa-table fa-fw'&gt;&lt;/i&gt;\" title=\"Открыть спецификацию изделия\" />\n  <item type=\"button\" id=\"btn_delete\" text=\"&lt;i class='fa fa-times fa-fw'&gt;&lt;/i&gt;\" title=\"Удалить строку заказа\" />\n  <item type=\"button\" id=\"btn_discount\" text=\"&lt;i class='fa fa-percent fa-fw'&gt;&lt;/i&gt;\" title=\"Скидки по типам строк заказа\"/>\n  <item id=\"sep1\" type=\"separator\"/>\n\n</toolbar>\n","toolbar_calc_order_obj.xml":"<?xml version=\"1.0\" encoding='utf-8'?>\n<toolbar>\n  <item id=\"sep0\" type=\"separator\"/>\n  <item type=\"button\" id=\"btn_save_close\" text=\"&lt;i class='fa fa-caret-square-o-down fa-fw'&gt;&lt;/i&gt;\" title=\"Записать и закрыть\"/>\n  <item type=\"button\" id=\"btn_save\" text=\"&lt;i class='fa fa-floppy-o fa-fw'&gt;&lt;/i&gt;\" title=\"Записать\"/>\n  <item type=\"button\" id=\"btn_sent\" text=\"&lt;i class='fa fa-paper-plane-o fa-fw'&gt;&lt;/i&gt;\" title=\"Отправить заказ\"/>\n\n  <item type=\"button\" id=\"btn_post\" enabled=\"false\" text=\"&lt;i class='fa fa-check-square-o fa-fw'&gt;&lt;/i&gt;\" title=\"Провести документ\"/>\n  <item type=\"button\" id=\"btn_unpost\" enabled=\"false\" text=\"&lt;i class='fa fa-square-o fa-fw'&gt;&lt;/i&gt;\" title=\"Отмена проведения\"/>\n\n  <item type=\"button\" id=\"btn_files\" text=\"&lt;i class='fa fa-paperclip fa-fw'&gt;&lt;/i&gt;\" title=\"Присоединенные файлы, {Ctrl}+Click для добавления ссылки\"/>\n\n  <item type=\"button\" id=\"btn_print\" text=\"&lt;i class='fa fa-print fa-fw'&gt;&lt;/i&gt;\" title=\"Печать\" openAll=\"true\">\n  </item>\n\n  <item type=\"buttonSelect\" id=\"bs_create_by_virtue\" text=\"&lt;i class='fa fa-bolt fa-fw'&gt;&lt;/i&gt;\" title=\"Создать на основании\" openAll=\"true\">\n    <item type=\"button\" id=\"planning_event\" enabled=\"false\" text=\"Событие\"/>\n    <item type=\"button\" id=\"calc_order\" text=\"Расчет\"/>\n    <item type=\"button\" id=\"cut_evaluation\" text=\"Оценка линейного раскроя\"/>\n    <item type=\"button\" id=\"cut_evaluation_2d\" text=\"Оценка раскроя стёкол\"/>\n    <item type=\"button\" id=\"debit_cash_order\" enabled=\"false\" text=\"Наличная оплата\"/>\n    <item type=\"button\" id=\"credit_card_order\" enabled=\"false\" text=\"Оплата картой\"/>\n    <item type=\"button\" id=\"selling\" enabled=\"false\" text=\"Реализация товаров услуг\"/>\n  </item>\n\n  <!--item type=\"buttonSelect\" id=\"bs_go_to\" text=\"&lt;i class='fa fa-external-link fa-fw'&gt;&lt;/i&gt;\" title=\"Перейти\" openAll=\"true\">\n    <item type=\"button\" id=\"btn_go_connection\" enabled=\"false\" text=\"Связи\"/>\n  </item-->\n\n  <item type=\"buttonSelect\" id=\"bs_more\" text=\"&lt;i class='fa fa-th-large fa-fw'&gt;&lt;/i&gt;\" title=\"Дополнительно\" openAll=\"true\">\n    <item type=\"button\" id=\"btn_reload\" text=\"&lt;i class='fa fa-refresh fa-fw'&gt;&lt;/i&gt; Перечитать с сервера\"/>\n    <item type=\"button\" id=\"btn_history\" text=\"&lt;i class='fa fa-history fa-fw'&gt;&lt;/i&gt; История\"/>\n    <item type=\"button\" id=\"btn_number\" text=\"&lt;i class='fa fa-terminal fa-fw'&gt;&lt;/i&gt; Изменить номер\"/>\n    <item type=\"separator\" id=\"sep_reload\"/>\n    <item type=\"button\" id=\"btn_retrieve\" text=\"&lt;i class='fa fa-undo fa-fw'&gt;&lt;/i&gt; Отозвать\" title=\"Отозвать заказ\"/>\n    <item type=\"separator\" id=\"sep_export\"/>\n    <item type=\"button\" id=\"btn_share\" text=\"&lt;i class='fa fa-share-alt fa-fw'&gt;&lt;/i&gt; Отправить сотруднику\"/>\n\n    <!--item type=\"button\" id=\"btn_import\" text=\"&lt;i class='fa fa-upload fa-fw'&gt;&lt;/i&gt; Загрузить из файла\"/>\n    <item type=\"button\" id=\"btn_export\" text=\"&lt;i class='fa fa-download fa-fw'&gt;&lt;/i&gt; Выгрузить в файл\"/>\n    <item id=\"btn_download\" type=\"button\" text=\"&lt;i class='fa fa-cloud-download fa-fw'&gt;&lt;/i&gt; Обновить из облака\"/>\n    <item id=\"btn_share\" type=\"button\" text=\"&lt;i class='fa fa-share-alt fa-fw'&gt;&lt;/i&gt; Отправить сотруднику\"/>\n    <item id=\"btn_inbox\" type=\"button\" text=\"&lt;i class='fa fa-inbox fa-fw'&gt;&lt;/i&gt; Входящие заказы\"/-->\n  </item>\n\n  <item id=\"sep_close_1\" type=\"separator\"/>\n  <item type=\"button\" id=\"btn_close\" text=\"&lt;i class='fa fa-times fa-fw'&gt;&lt;/i&gt;\" title=\"Закрыть форму\"/>\n  <item id=\"sep_close_2\" type=\"separator\"/>\n\n</toolbar>\n","toolbar_calc_order_selection.xml":"<?xml version=\"1.0\" encoding='utf-8'?>\n<toolbar>\n\n  <item id=\"sep0\" type=\"separator\"/>\n\n  <item id=\"btn_select\" type=\"button\" title=\"Выбрать элемент списка\" text=\"&lt;b&gt;Выбрать&lt;/b&gt;\"/>\n\n  <item id=\"sep1\" type=\"separator\"/>\n  <item id=\"btn_new\" type=\"button\" text=\"&lt;i class='fa fa-plus-circle fa-fw'&gt;&lt;/i&gt;\" title=\"Создать\"/>\n  <item id=\"btn_edit\" type=\"button\" text=\"&lt;i class='fa fa-pencil fa-fw'&gt;&lt;/i&gt;\" title=\"Изменить\"/>\n  <item id=\"btn_delete\" type=\"button\" text=\"&lt;i class='fa fa-times fa-fw'&gt;&lt;/i&gt;\" title=\"Удалить\"/>\n  <item id=\"sep2\" type=\"separator\"/>\n\n  <item type=\"button\" id=\"btn_print\" text=\"&lt;i class='fa fa-print fa-fw'&gt;&lt;/i&gt; Печать\" openAll=\"true\">\n  </item>\n\n  <item type=\"buttonSelect\" id=\"bs_create_by_virtue\" text=\"&lt;i class='fa fa-bolt fa-fw'&gt;&lt;/i&gt;\" title=\"Создать на основании\" openAll=\"true\">\n    <item type=\"button\" id=\"planning_event\" enabled=\"false\" text=\"Событие\"/>\n    <item type=\"button\" id=\"calc_order\" text=\"Расчет\"/>\n    <item type=\"button\" id=\"debit_cash_order\" enabled=\"false\" text=\"Наличная оплата\"/>\n    <item type=\"button\" id=\"credit_card_order\" enabled=\"false\" text=\"Оплата картой\"/>\n    <item type=\"button\" id=\"selling\" enabled=\"false\" text=\"Реализация товаров услуг\"/>\n  </item>\n\n  <!--item type=\"buttonSelect\" id=\"bs_go_to\" text=\"&lt;i class='fa fa-external-link fa-fw'&gt;&lt;/i&gt;\" title=\"Перейти\" openAll=\"true\" >\n    <item type=\"button\" id=\"btn_go_connection\" enabled=\"false\" text=\"Связи\" />\n  </item-->\n\n  <item type=\"buttonSelect\" id=\"bs_more\" text=\"&lt;i class='fa fa-th-large fa-fw'&gt;&lt;/i&gt;\" title=\"Дополнительно\" openAll=\"true\">\n    <item id=\"btn_requery\" type=\"button\" text=\"&lt;i class='fa fa-refresh fa-fw'&gt;&lt;/i&gt; Обновить список\"/>\n    <item id=\"btn_history\" type=\"button\"  text=\"&lt;i class='fa fa-history fa-fw'&gt;&lt;/i&gt; История\"/>\n    <item id=\"sep_requery\" type=\"separator\"/>\n    <item id=\"btn_download\" type=\"button\" text=\"&lt;i class='fa fa-cloud-download fa-fw'&gt;&lt;/i&gt; Обновить из облака\"/>\n    <item id=\"btn_share\" type=\"button\" text=\"&lt;i class='fa fa-share-alt fa-fw'&gt;&lt;/i&gt; Отправить сотруднику\"/>\n    <item id=\"btn_inbox\" type=\"button\" text=\"&lt;i class='fa fa-inbox fa-fw'&gt;&lt;/i&gt; Входящие заказы\"/>\n    <item id=\"sep_export\" type=\"separator\"/>\n  </item>\n\n  <item id=\"sep3\" type=\"separator\"/>\n\n</toolbar>\n","toolbar_product_list.xml":"<?xml version=\"1.0\" encoding='utf-8'?>\n<toolbar>\n    <item id=\"btn_ok\"   type=\"button\"   text=\"&lt;b&gt;Рассчитать и закрыть&lt;/b&gt;\" title=\"Рассчитать, записать и закрыть\"  />\n    <item id=\"sep0\" type=\"separator\"/>\n    <item id=\"btn_xls\"  type=\"button\"\ttext=\"Загрузить из XLS\" title=\"Загрузить список продукции из файла xls\" />\n\n    <item type=\"button\" id=\"btn_post\" enabled=\"false\" text=\"\" title=\"\" />\n    <item type=\"button\" id=\"btn_unpost\" enabled=\"false\" text=\"\" title=\"\" />\n    <item type=\"buttonSelect\" id=\"bs_print\" enabled=\"false\" text=\"\" title=\"\" openAll=\"true\">\n    </item>\n\n</toolbar>","toolbar_characteristics_specification.xml":"<?xml version=\"1.0\" encoding='utf-8'?>\n<toolbar>\n  <item id=\"sep0\" type=\"separator\"/>\n  <item type=\"button\" id=\"btn_origin\" text=\"&lt;i class='fa fa-external-link fa-fw'&gt;&lt;/i&gt; Происхождение\" title=\"Ссылка на настройки\" />\n  <item id=\"sp\" type=\"spacer\"/>\n\n  <item id=\"input_filter\" type=\"buttonInput\" width=\"200\" title=\"Поиск по подстроке\" />\n\n  <item id=\"sep2\" type=\"separator\"/>\n  <item type=\"buttonSelect\"   id=\"bs_more\"  text=\"&lt;i class='fa fa-share-alt fa-fw'&gt;&lt;/i&gt;\"  title=\"Экспорт\" openAll=\"true\">\n    <item type=\"button\" id=\"btn_csv\" text=\"&lt;i class='fa fa-file-text-o fa-fw'&gt;&lt;/i&gt; Скопировать в CSV\" />\n    <item type=\"button\" id=\"btn_json\" text=\"&lt;i class='fa fa-file-code-o fa-fw'&gt;&lt;/i&gt; Скопировать в JSON\" />\n    <item type=\"button\" id=\"btn_xls\" text=\"&lt;i class='fa fa-file-excel-o fa-fw'&gt;&lt;/i&gt; Выгрузить в XLS\" />\n  </item>\n</toolbar>\n","toolbar_glass_inserts.xml":"<?xml version=\"1.0\" encoding='utf-8'?>\n<toolbar>\n  <item id=\"btn_add\" type=\"button\"  text=\"&lt;i class='fa fa-plus-circle fa-fw'&gt;&lt;/i&gt;\" title=\"Добавить строку\"  />\n  <item id=\"btn_delete\" type=\"button\" text=\"&lt;i class='fa fa-times fa-fw'&gt;&lt;/i&gt;\"  title=\"Удалить строку\" />\n  <item id=\"btn_up\" type=\"button\" text=\"&lt;i class='fa fa-arrow-up fa-fw'&gt;&lt;/i&gt;\"  title=\"Переместить строку вверх\" />\n  <item id=\"btn_down\" type=\"button\" text=\"&lt;i class='fa fa-arrow-down fa-fw'&gt;&lt;/i&gt;\"  title=\"Переместить строку вниз\" />\n  <item id=\"sep1\" type=\"separator\"/>\n  <item id=\"btn_inset\" type=\"button\" text=\"&lt;i class='fa fa-plug fa-fw'&gt;&lt;/i&gt;\"  title=\"Заполнить по вставке\" />\n</toolbar>\n","toolbar_discounts.xml":"<?xml version=\"1.0\" encoding='utf-8'?>\n<toolbar>\n  <item type=\"buttonSelect\"   id=\"bs\"  text=\"Скидки производителя\"  title=\"Режим\" openAll=\"true\">\n    <item type=\"button\" id=\"discount_percent\" text=\"Скидки производителя\" />\n    <item type=\"button\" id=\"discount_percent_internal\" text=\"Скидки дилера\" />\n    <item type=\"button\" id=\"extra_charge_external\" text=\"Наценки дилера\" />\n  </item>\n</toolbar>\n","toolbar_obj.xml":"<?xml version=\"1.0\" encoding='utf-8'?>\n<toolbar>\n    <item id=\"sep0\" type=\"separator\"/>\n    <item type=\"button\" id=\"btn_save_close\" text=\"&lt;b&gt;Записать и закрыть&lt;/b&gt;\" title=\"Рассчитать, записать и закрыть\" />\n    <item type=\"button\" id=\"btn_save\" text=\"&lt;i class='fa fa-floppy-o fa-lg fa-fw'&gt;&lt;/i&gt;\" title=\"Рассчитать и записать данные\"/>\n    <item type=\"button\" id=\"btn_post\" enabled=\"false\" text=\"&lt;i class='fa fa-check-square-o fa-lg fa-fw'&gt;&lt;/i&gt;\" title=\"Провести документ\" />\n    <item type=\"button\" id=\"btn_unpost\" enabled=\"false\" text=\"&lt;i class='fa fa-square-o fa-lg fa-fw'&gt;&lt;/i&gt;\" title=\"Отмена проведения\" />\n\n    <item type=\"button\" id=\"btn_files\" text=\"&lt;i class='fa fa-paperclip fa-lg fa-fw'&gt;&lt;/i&gt;\" title=\"Присоединенные файлы\"/>\n\n    <item type=\"buttonSelect\" id=\"bs_print\" text=\"&lt;i class='fa fa-print fa-lg fa-fw'&gt;&lt;/i&gt;\" title=\"Печать\" openAll=\"true\">\n    </item>\n\n    <item type=\"buttonSelect\" id=\"bs_create_by_virtue\" text=\"&lt;i class='fa fa-bolt fa-lg fa-fw'&gt;&lt;/i&gt;\" title=\"Создать на основании\" openAll=\"true\" >\n        <item type=\"button\" id=\"btn_message\" enabled=\"false\" text=\"Сообщение\" />\n    </item>\n\n    <item type=\"buttonSelect\" id=\"bs_go_to\" text=\"&lt;i class='fa fa-external-link fa-lg fa-fw'&gt;&lt;/i&gt;\" title=\"Перейти\" openAll=\"true\" >\n        <item type=\"button\" id=\"btn_go_connection\" enabled=\"false\" text=\"Связи\" />\n    </item>\n\n    <item type=\"buttonSelect\"   id=\"bs_more\"  text=\"&lt;i class='fa fa-th-large fa-lg fa-fw'&gt;&lt;/i&gt;\"  title=\"Дополнительно\" openAll=\"true\">\n      <item type=\"button\" id=\"btn_history\" text=\"&lt;i class='fa fa-history fa-fw'&gt;&lt;/i&gt; История\"/>\n      <item type=\"button\" id=\"btn_import\" text=\"&lt;i class='fa fa-upload fa-lg fa-fw'&gt;&lt;/i&gt; Загрузить из файла\" />\n      <item type=\"button\" id=\"btn_export\" text=\"&lt;i class='fa fa-download fa-lg fa-fw'&gt;&lt;/i&gt; Выгрузить в файл\" />\n    </item>\n\n    <item id=\"sep_close_1\" type=\"separator\"/>\n    <item type=\"button\" id=\"btn_close\" text=\"&lt;i class='fa fa-times fa-lg fa-fw'&gt;&lt;/i&gt;\" title=\"Закрыть форму\"/>\n    <item id=\"sep_close_2\" type=\"separator\"/>\n\n</toolbar>\n","tree_balance.xml":"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<tree id=\"0\">\n    <item id=\"doc.debit_cash_order\" text=\"Приходный кассовый ордер\" select=\"1\"><icons file=\"icon_1c_doc\" /></item>\n    <item id=\"doc.credit_card_order\" text=\"Оплата от покупателя платежной картой\"><icons file=\"icon_1c_doc\" /></item>\n    <item id=\"doc.debit_bank_order\" text=\"Платежное поручение входящее\"><icons file=\"icon_1c_doc\" /></item>\n    <item id=\"doc.selling\" text=\"Реализация товаров и услуг\"><icons file=\"icon_1c_doc\" /></item>\n</tree>\n","tree_events.xml":"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<tree id=\"0\">\n    <item id=\"cat.stores\" text=\"Склады\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.divisions\" text=\"Подразделения\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"doc.work_centers_performance\" select=\"1\" text=\"Мощности рабочих центров\"><icons file=\"icon_1c_doc\" /></item>\n    <!--\n    <item id=\"doc.planning_event\" text=\"Событие планирования\"><icons file=\"icon_1c_doc\" /></item>\n    -->\n</tree>\n","tree_filteres.xml":"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<tree id=\"0\">\n    <item id=\"draft\" text=\"Черновики\" select=\"1\" tooltip=\"Предварительные расчеты\"><icons file=\"fa-pencil\" /></item>\n    <item id=\"sent\" text=\"Отправлено\" tooltip=\"Отправленные, но еще не принятые в работу. Могут быть отозваны (переведены в 'черновики')\"><icons file=\"fa-paper-plane-o\" /></item>\n    <item id=\"confirmed\" text=\"Согласовано\" tooltip=\"Включены в план производства. Могут быть изменены менеджером. Недоступны для изменения дилером\"><icons file=\"fa-thumbs-o-up\" /></item>\n    <item id=\"declined\" text=\"Отклонено\" tooltip=\"Не приняты в работу по техническим причинам. Требуется изменение конструктива или комплектации\"><icons file=\"fa-thumbs-o-down\" /></item>\n\n    <!--item id=\"execution\" text=\"Долги\" tooltip=\"Оплата, отгрузка\"><icons file=\"fa-money\" /></item>\n    <item id=\"plan\" text=\"План\" tooltip=\"Согласованы, но еще не запущены в работу\"><icons file=\"fa-calendar-check-o\" /></item>\n    <item id=\"underway\" text=\"В работе\" tooltip=\"Включены в задания на производство, но еще не изготовлены\"><icons file=\"fa-industry\" /></item>\n    <item id=\"manufactured\" text=\"Изготовлено\" tooltip=\"Изготовлены, но еще не отгружены\"><icons file=\"fa-gavel\" /></item>\n    <item id=\"executed\" text=\"Исполнено\" tooltip=\"Отгружены клиенту\"><icons file=\"fa-truck\" /></item -->\n\n    <item id=\"service\" text=\"Сервис\" tooltip=\"Сервисное обслуживание\"><icons file=\"fa-medkit\" /></item>\n    <item id=\"complaints\" text=\"Рекламации\" tooltip=\"Жалобы и рекламации\"><icons file=\"fa-frown-o\" /></item>\n\n    <item id=\"template\" text=\"Шаблоны\" tooltip=\"Типовые блоки\"><icons file=\"fa-puzzle-piece\" /></item>\n    <item id=\"zarchive\" text=\"Архив\" tooltip=\"Старые заказы\"><icons file=\"fa-archive\" /></item>\n    <item id=\"all\" text=\"Все\" tooltip=\"Отключить фильтрацию\"><icons file=\"fa-expand\" /></item>\n</tree>\n","tree_industry.xml":"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<tree id=\"0\">\n    <item id=\"cat.nom_kinds\" text=\"Виды номенклатуры\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.nom_groups\" text=\"Номенклатурные группы\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.nom\" text=\"Номенклатура\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.production_params\" text=\"Параметры продукции\" select=\"1\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.cnns\" text=\"Соединения\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.inserts\" text=\"Вставки\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.furns\" text=\"Фурнитура\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.clrs\" text=\"Цвета\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.color_price_groups\" text=\"Цвето-ценовые группы\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.params_links\" text=\"Связи параметров\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.elm_visualization\" text=\"Визуализация элементов\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.insert_bind\" text=\"Привязки вставок\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.formulas\" text=\"Формулы\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cch.properties\" text=\"Дополнительные реквизиты\"><icons file=\"icon_1c_cch\" /></item>\n</tree>\n","tree_price.xml":"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<tree id=\"0\">\n    <item id=\"cat.users\" text=\"Пользователи\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.individuals\" text=\"Физические лица\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.organizations\" text=\"Организации\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.partners\" text=\"Контрагенты\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.contracts\" text=\"Договоры\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.nom_prices_types\" text=\"Виды цен\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.price_groups\" text=\"Ценовые группы\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"cat.currencies\" text=\"Валюты\"><icons file=\"icon_1c_cat\" /></item>\n    <item id=\"ireg.currency_courses\" text=\"Курсы валют\"><icons file=\"icon_1c_ireg\" /></item>\n    <item id=\"ireg.margin_coefficients\" text=\"Маржинальные коэффициенты\"><icons file=\"icon_1c_ireg\" /></item>\n    <item id=\"doc.nom_prices_setup\" text=\"Установка цен номенклатуры\" select=\"1\"><icons file=\"icon_1c_doc\" /></item>\n    <item id=\"cch.predefined_elmnts\" text=\"Константы и списки\"><icons file=\"icon_1c_cch\" /></item>\n\n</tree>\n","view_blank.html":"<!DOCTYPE html>\n<html lang=\"ru\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"/>\n    <title>Документ</title>\n    <style>\n\n        html {\n            width: 100%;\n            height: 100%;\n            margin: 0;\n            padding: 0;\n            overflow: auto;\n\n        }\n        body {\n            width: 210mm;\n            margin-left: auto;\n            margin-right: auto;\n            overflow: hidden;\n            color: rgb(48, 57, 66);\n            font-family: Arial, sans-serif;\n            font-size: 11pt;\n            text-rendering: optimizeLegibility;\n        }\n\n        /* Таблица */\n        table.border {\n            border-collapse: collapse; border: 1px solid;\n        }\n        table.border > tbody > tr > td,\n        table.border > tr > td,\n        table.border th{\n            border: 1px solid;\n        }\n        .noborder{\n            border: none;\n        }\n\n        /* Многоуровневый список */\n        ol {\n            counter-reset: li;\n            list-style: none;\n            padding: 0;\n        }\n        li {\n            margin-top: 8px;\n        }\n        li:before {\n            counter-increment: li;\n            content: counters(li,\".\") \".\";\n            padding-right: 8px;\n        }\n        li.flex {\n            display: flex;\n            text-align: left;\n            list-style-position: outside;\n            font-weight: normal;\n        }\n\n        .container {\n            width: 100%;\n            position: relative;\n        }\n\n        .margin-top-20 {\n            margin-top: 20px;\n        }\n\n        .column-50-percent {\n            width: 48%;\n            min-width: 40%;\n            float: left;\n            padding: 8px;\n        }\n\n        .column-30-percent {\n            width: 31%;\n            min-width: 30%;\n            float: left;\n            padding: 8px;\n        }\n\n        .block-left {\n            display: block;\n            float: left;\n        }\n\n        .block-center {\n            display: block;\n            margin-left: auto;\n            margin-right: auto;\n        }\n\n        .block-right {\n            display: block;\n            float: right;\n        }\n\n        .list-center {\n            text-align: center;\n            list-style-position: inside;\n            font-weight: bold;\n        }\n\n        .clear-both {\n            clear: both;\n        }\n\n        .small {\n            font-size: small;\n        }\n\n        .text-center {\n            text-align: center;\n        }\n\n        .text-justify {\n            text-align: justify;\n        }\n\n        .text-right {\n            text-align: right;\n        }\n\n        .muted-color {\n            color: #636773;\n        }\n\n        .accent-color {\n            color: #f30000;\n        }\n\n        .note {\n            background: #eaf3f8;\n            color: #2980b9;\n            font-style: italic;\n            padding: 12px 20px;\n        }\n\n        .note:before {\n            content: 'Замечание: ';\n            font-weight: 500;\n        }\n        *, *:before, *:after {\n            box-sizing: inherit;\n        }\n\n    </style>\n</head>\n<body>\n\n</body>\n</html>","view_settings.html":"<div class=\"md_column1300\">\n\n    <div class=\"md_column320\" name=\"form1\" style=\"max-width: 400px;\"><div></div></div>\n\n    <div class=\"md_column320\" name=\"form2\" style=\"max-width: 400px;\"><div></div></div>\n\n</div>"});
-// индивидуальная форма объекта характеристики
-$p.cat.characteristics.form_obj = function (pwnd, attr, handlers) {
-
-  const _meta = this.metadata();
-
-  attr.draw_tabular_sections = function (o, wnd, tabular_init) {
-
-    _meta.form.obj.tabular_sections_order.forEach((ts) => {
-      if(ts == 'specification') {
-        // табчасть со специфическим набором кнопок
-        tabular_init('specification', $p.injected_data['toolbar_characteristics_specification.xml']);
-        wnd.elmnts.tabs.tab_specification.getAttachedToolbar().attachEvent('onclick', (btn_id) => {
-
-          if(btn_id == 'btn_origin') {
-            const selId = wnd.elmnts.grids.specification.getSelectedRowId();
-            if(selId && !isNaN(Number(selId))) {
-              return o.open_origin(Number(selId) - 1);
-            }
-
-            $p.msg.show_msg({
-              type: 'alert-warning',
-              text: $p.msg.no_selected_row.replace('%1', 'Спецификация'),
-              title: o.presentation,
-            });
-          }
-
-        });
-      }
-      else {
-        tabular_init(ts);
-      }
-    });
-  };
-
-  return this.constructor.prototype.form_obj.call(this, pwnd, attr)
-    .then((res) => {
-      if(res) {
-        o = res.o;
-        wnd = res.wnd;
-        wnd.close_confirmed = true;
-        wnd.elmnts.frm_toolbar.attachEvent('onclick', (btn_id) => {
-          if(btn_id === 'btn_history') {
-            $p.dp.buyers_order.open_component(wnd, {ref: o.ref, cmd: {hfields: null, db: null}, _mgr: this}, handlers, 'ObjHistory');
-          }
-        });
-        return res;
-      }
-    });
-};
-
-
-/**
- * Методы менеджера цветов
- */
-
-Object.defineProperties($p.cat.clrs, {
-
-  /**
-   * Форма выбора с фильтром по двум цветам, создающая при необходимости составной цвет
-   */
-  form_selection: {
-    value(pwnd, attr) {
-
-      const eclr = this.get();
-
-      attr.hide_filter = true;
-
-      attr.toolbar_click = (btn_id, wnd) => {
-        // если указаны оба цвета
-        if(btn_id == 'btn_select' && !eclr.clr_in.empty() && !eclr.clr_out.empty()) {
-
-          let clr = eclr.clr_in;
-          if(eclr.clr_in != eclr.clr_out) {
-            clr = this.by_in_out(eclr);
-            if(clr.empty()) {
-              clr = this.getter(`${eclr.clr_in.valueOf()}${eclr.clr_out.valueOf()}`);
-            }
-          }
-
-          pwnd.on_select(clr);
-
-          wnd.close();
-          return false;
-        }
-      };
-
-      const wnd = this.constructor.prototype.form_selection.call(this, pwnd, attr);
-
-      function get_option_list(selection, val) {
-
-        selection.clr_in = $p.utils.blank.guid;
-        selection.clr_out = $p.utils.blank.guid;
-
-        if(attr.selection) {
-          attr.selection.some((sel) => {
-            for (const key in sel) {
-              if(key == 'ref') {
-                selection.ref = sel.ref;
-                return true;
-              }
-            }
-          });
-        }
-
-        return this.constructor.prototype.get_option_list.call(this, selection, val);
-      }
-
-      return (wnd instanceof Promise ? wnd : Promise.resolve(wnd))
-        .then((wnd) => {
-
-          const tb_filter = wnd.elmnts.filter;
-
-          tb_filter.__define({
-            get_filter: {
-              value() {
-                const res = {
-                  selection: []
-                };
-                if(clr_in.getSelectedValue()) {
-                  res.selection.push({clr_in: clr_in.getSelectedValue()});
-                }
-                if(clr_out.getSelectedValue()) {
-                  res.selection.push({clr_out: clr_out.getSelectedValue()});
-                }
-                if(res.selection.length) {
-                  res.hide_tree = true;
-                }
-                return res;
-              }
-            }
-          });
-
-          wnd.attachEvent('onClose', () => {
-            clr_in.unload();
-            clr_out.unload();
-            eclr.clr_in = $p.utils.blank.guid;
-            eclr.clr_out = $p.utils.blank.guid;
-            return true;
-          });
-
-
-          eclr.clr_in = $p.utils.blank.guid;
-          eclr.clr_out = $p.utils.blank.guid;
-
-          // Создаём элементы управления
-          const clr_in = new $p.iface.OCombo({
-            parent: tb_filter.div.obj,
-            obj: eclr,
-            field: 'clr_in',
-            width: 160,
-            hide_frm: true,
-            get_option_list: get_option_list
-          });
-          const clr_out = new $p.iface.OCombo({
-            parent: tb_filter.div.obj,
-            obj: eclr,
-            field: 'clr_out',
-            width: 160,
-            hide_frm: true,
-            get_option_list: get_option_list
-          });
-
-          clr_in.DOMelem.style.float = 'left';
-          clr_in.DOMelem_input.placeholder = 'Цвет изнутри';
-          clr_out.DOMelem_input.placeholder = 'Цвет снаружи';
-
-          clr_in.attachEvent('onChange', tb_filter.call_event);
-          clr_out.attachEvent('onChange', tb_filter.call_event);
-          clr_in.attachEvent('onClose', tb_filter.call_event);
-          clr_out.attachEvent('onClose', tb_filter.call_event);
-
-          // гасим кнопки управления
-          wnd.elmnts.toolbar.hideItem('btn_new');
-          wnd.elmnts.toolbar.hideItem('btn_edit');
-          wnd.elmnts.toolbar.hideItem('btn_delete');
-
-          wnd.elmnts.toolbar.setItemText('btn_select', '<b>Выбрать или создать</b>');
-
-          return wnd;
-
-        });
-    },
-    configurable: true,
-    writable: true,
-  },
-
-  /**
-   * Изменяем алгоритм построения формы списка. Игнорируем иерархию, если указаны цвета изнутри или снаружи
-   */
-  sync_grid: {
-    value(attr, grid) {
-
-      if(attr.action == "get_selection" && attr.selection && attr.selection.some(function (v) {
-        return v.hasOwnProperty("clr_in") || v.hasOwnProperty("clr_out");
-      })){
-        delete attr.parent;
-        delete attr.initial_value;
-      }
-
-      return $p.classes.DataManager.prototype.sync_grid.call(this, attr, grid);
-    }
-  },
-});
-
-
-/**
- * @module cat_divisions
- *
- * Created by Evgeniy Malyarov on 27.05.2017.
- */
-
-
-Object.defineProperties($p.cat.divisions, {
-  get_option_list: {
-    value(selection, val) {
-      const list = [];
-      $p.current_user.acl_objs.find_rows({type: "cat.divisions"}, ({acl_obj}) => {
-        if(acl_obj && list.indexOf(acl_obj) == -1){
-          list.push(acl_obj);
-          acl_obj._children().forEach((o) => list.indexOf(o) == -1 && list.push(o));
-        }
-      });
-      if(!list.length){
-        return this.constructor.prototype.get_option_list.call(this, selection, val);
-      }
-
-      function check(v){
-        if($p.utils.is_equal(v.value, val))
-          v.selected = true;
-        return v;
-      }
-
-      const l = [];
-      $p.utils._find_rows.call(this, list, selection, (v) => l.push(check({text: v.presentation, value: v.ref})));
-
-      l.sort(function(a, b) {
-        if (a.text < b.text){
-          return -1;
-        }
-        else if (a.text > b.text){
-          return 1;
-        }
-        return 0;
-      })
-      return Promise.resolve(l);
-    },
-    writable: true
-  }
-});
-
-
-/**
- * Методы менеджера фурнитуры
- */
-Object.defineProperties($p.cat.furns, {
-
-  sql_selection_list_flds: {
-    value(initial_value){
-      return "SELECT _t_.ref, _t_.`_deleted`, _t_.is_folder, _t_.parent, case when _t_.is_folder then '' else _t_.id end as id, _t_.name as presentation, _k_.synonym as open_type, \
-					 case when _t_.ref = '" + initial_value + "' then 0 else 1 end as is_initial_value FROM cat_furns AS _t_ \
-					 left outer join enm_open_types as _k_ on _k_.ref = _t_.open_type %3 %4 LIMIT 300";
-    }
-  },
-
-  get_option_list: {
-    value(selection, val) {
-
-      let layer = selection?._attr?.obj instanceof $p.Editor.Contour ? selection._attr.obj : null;
-      let project;
-      if(layer) {
-        project = layer.project;
-      }
-      else if(window.paper && paper.project) {
-        project = paper.project;
-        layer = project.activeLayer;
-      }
-
-
-      if(project) {
-        const {characteristic, sys} = project._dp;
-        const {furn} = $p.job_prm.properties;
-
-        if(furn && sys && !sys.empty()){
-
-          const links = furn.params_links({
-            grid: {selection: {cnstr: 0}},
-            obj: {_owner: {_owner: characteristic}, layer}
-          });
-
-          if(links.length){
-            // собираем все доступные значения в одном массиве
-            const list = [];
-            links.forEach((link) => link.values.forEach((row) => list.push(this.get(row._obj.value))));
-
-            function check(v){
-              if($p.utils.is_equal(v.value, val))
-                v.selected = true;
-              return v;
-            }
-
-            const l = [];
-            $p.utils._find_rows.call(this, list, selection, (v) => l.push(check({text: v.presentation, value: v.ref})));
-
-            l.sort((a, b) => {
-              if (a.text < b.text){
-                return -1;
-              }
-              else if (a.text > b.text){
-                return 1;
-              }
-              return 0;
-            });
-            return Promise.resolve(l);
-          }
-        }
-      }
-
-      return this.constructor.prototype.get_option_list.call(this, selection, val);
-    },
-    configurable: true
-  }
-
-});
-
 /**
  * форма списка документов Расчет-заказ. публикуемый метод: doc.calc_order.form_list(o, pwnd, attr)
  *
@@ -2295,6 +1971,330 @@ $p.on('tabular_paste', (clip) => {
       clip.e.preventDefault();
       return $p.iface.cancel_bubble(e);
     }
+  }
+
+});
+
+// индивидуальная форма объекта характеристики
+$p.cat.characteristics.form_obj = function (pwnd, attr, handlers) {
+
+  const _meta = this.metadata();
+
+  attr.draw_tabular_sections = function (o, wnd, tabular_init) {
+
+    _meta.form.obj.tabular_sections_order.forEach((ts) => {
+      if(ts == 'specification') {
+        // табчасть со специфическим набором кнопок
+        tabular_init('specification', $p.injected_data['toolbar_characteristics_specification.xml']);
+        wnd.elmnts.tabs.tab_specification.getAttachedToolbar().attachEvent('onclick', (btn_id) => {
+
+          if(btn_id == 'btn_origin') {
+            const selId = wnd.elmnts.grids.specification.getSelectedRowId();
+            if(selId && !isNaN(Number(selId))) {
+              return o.open_origin(Number(selId) - 1);
+            }
+
+            $p.msg.show_msg({
+              type: 'alert-warning',
+              text: $p.msg.no_selected_row.replace('%1', 'Спецификация'),
+              title: o.presentation,
+            });
+          }
+
+        });
+      }
+      else {
+        tabular_init(ts);
+      }
+    });
+  };
+
+  return this.constructor.prototype.form_obj.call(this, pwnd, attr)
+    .then((res) => {
+      if(res) {
+        o = res.o;
+        wnd = res.wnd;
+        wnd.close_confirmed = true;
+        wnd.elmnts.frm_toolbar.attachEvent('onclick', (btn_id) => {
+          if(btn_id === 'btn_history') {
+            $p.dp.buyers_order.open_component(wnd, {ref: o.ref, cmd: {hfields: null, db: null}, _mgr: this}, handlers, 'ObjHistory');
+          }
+        });
+        return res;
+      }
+    });
+};
+
+
+/**
+ * Методы менеджера цветов
+ */
+
+Object.defineProperties($p.cat.clrs, {
+
+  /**
+   * Форма выбора с фильтром по двум цветам, создающая при необходимости составной цвет
+   */
+  form_selection: {
+    value(pwnd, attr) {
+
+      const eclr = this.get();
+
+      attr.hide_filter = true;
+
+      attr.toolbar_click = (btn_id, wnd) => {
+        // если указаны оба цвета
+        if(btn_id == 'btn_select' && !eclr.clr_in.empty() && !eclr.clr_out.empty()) {
+
+          let clr = eclr.clr_in;
+          if(eclr.clr_in != eclr.clr_out) {
+            clr = this.by_in_out(eclr);
+            if(clr.empty()) {
+              clr = this.getter(`${eclr.clr_in.valueOf()}${eclr.clr_out.valueOf()}`);
+            }
+          }
+
+          pwnd.on_select(clr);
+
+          wnd.close();
+          return false;
+        }
+      };
+
+      const wnd = this.constructor.prototype.form_selection.call(this, pwnd, attr);
+
+      function get_option_list(selection, val) {
+
+        selection.clr_in = $p.utils.blank.guid;
+        selection.clr_out = $p.utils.blank.guid;
+
+        if(attr.selection) {
+          attr.selection.some((sel) => {
+            for (const key in sel) {
+              if(key == 'ref') {
+                selection.ref = sel.ref;
+                return true;
+              }
+            }
+          });
+        }
+
+        return this.constructor.prototype.get_option_list.call(this, selection, val);
+      }
+
+      return (wnd instanceof Promise ? wnd : Promise.resolve(wnd))
+        .then((wnd) => {
+
+          const tb_filter = wnd.elmnts.filter;
+
+          tb_filter.__define({
+            get_filter: {
+              value() {
+                const res = {
+                  selection: []
+                };
+                if(clr_in.getSelectedValue()) {
+                  res.selection.push({clr_in: clr_in.getSelectedValue()});
+                }
+                if(clr_out.getSelectedValue()) {
+                  res.selection.push({clr_out: clr_out.getSelectedValue()});
+                }
+                if(res.selection.length) {
+                  res.hide_tree = true;
+                }
+                return res;
+              }
+            }
+          });
+
+          wnd.attachEvent('onClose', () => {
+            clr_in.unload();
+            clr_out.unload();
+            eclr.clr_in = $p.utils.blank.guid;
+            eclr.clr_out = $p.utils.blank.guid;
+            return true;
+          });
+
+
+          eclr.clr_in = $p.utils.blank.guid;
+          eclr.clr_out = $p.utils.blank.guid;
+
+          // Создаём элементы управления
+          const clr_in = new $p.iface.OCombo({
+            parent: tb_filter.div.obj,
+            obj: eclr,
+            field: 'clr_in',
+            width: 160,
+            hide_frm: true,
+            get_option_list: get_option_list
+          });
+          const clr_out = new $p.iface.OCombo({
+            parent: tb_filter.div.obj,
+            obj: eclr,
+            field: 'clr_out',
+            width: 160,
+            hide_frm: true,
+            get_option_list: get_option_list
+          });
+
+          clr_in.DOMelem.style.float = 'left';
+          clr_in.DOMelem_input.placeholder = 'Цвет изнутри';
+          clr_out.DOMelem_input.placeholder = 'Цвет снаружи';
+
+          clr_in.attachEvent('onChange', tb_filter.call_event);
+          clr_out.attachEvent('onChange', tb_filter.call_event);
+          clr_in.attachEvent('onClose', tb_filter.call_event);
+          clr_out.attachEvent('onClose', tb_filter.call_event);
+
+          // гасим кнопки управления
+          wnd.elmnts.toolbar.hideItem('btn_new');
+          wnd.elmnts.toolbar.hideItem('btn_edit');
+          wnd.elmnts.toolbar.hideItem('btn_delete');
+
+          wnd.elmnts.toolbar.setItemText('btn_select', '<b>Выбрать или создать</b>');
+
+          return wnd;
+
+        });
+    },
+    configurable: true,
+    writable: true,
+  },
+
+  /**
+   * Изменяем алгоритм построения формы списка. Игнорируем иерархию, если указаны цвета изнутри или снаружи
+   */
+  sync_grid: {
+    value(attr, grid) {
+
+      if(attr.action == "get_selection" && attr.selection && attr.selection.some(function (v) {
+        return v.hasOwnProperty("clr_in") || v.hasOwnProperty("clr_out");
+      })){
+        delete attr.parent;
+        delete attr.initial_value;
+      }
+
+      return $p.classes.DataManager.prototype.sync_grid.call(this, attr, grid);
+    }
+  },
+});
+
+
+/**
+ * @module cat_divisions
+ *
+ * Created by Evgeniy Malyarov on 27.05.2017.
+ */
+
+
+Object.defineProperties($p.cat.divisions, {
+  get_option_list: {
+    value(selection, val) {
+      const list = [];
+      $p.current_user.acl_objs.find_rows({type: "cat.divisions"}, ({acl_obj}) => {
+        if(acl_obj && list.indexOf(acl_obj) == -1){
+          list.push(acl_obj);
+          acl_obj._children().forEach((o) => list.indexOf(o) == -1 && list.push(o));
+        }
+      });
+      if(!list.length){
+        return this.constructor.prototype.get_option_list.call(this, selection, val);
+      }
+
+      function check(v){
+        if($p.utils.is_equal(v.value, val))
+          v.selected = true;
+        return v;
+      }
+
+      const l = [];
+      $p.utils._find_rows.call(this, list, selection, (v) => l.push(check({text: v.presentation, value: v.ref})));
+
+      l.sort(function(a, b) {
+        if (a.text < b.text){
+          return -1;
+        }
+        else if (a.text > b.text){
+          return 1;
+        }
+        return 0;
+      })
+      return Promise.resolve(l);
+    },
+    writable: true
+  }
+});
+
+
+/**
+ * Методы менеджера фурнитуры
+ */
+Object.defineProperties($p.cat.furns, {
+
+  sql_selection_list_flds: {
+    value(initial_value){
+      return "SELECT _t_.ref, _t_.`_deleted`, _t_.is_folder, _t_.parent, case when _t_.is_folder then '' else _t_.id end as id, _t_.name as presentation, _k_.synonym as open_type, \
+					 case when _t_.ref = '" + initial_value + "' then 0 else 1 end as is_initial_value FROM cat_furns AS _t_ \
+					 left outer join enm_open_types as _k_ on _k_.ref = _t_.open_type %3 %4 LIMIT 300";
+    }
+  },
+
+  get_option_list: {
+    value(selection, val) {
+
+      let layer = selection?._attr?.obj instanceof $p.Editor.Contour ? selection._attr.obj : null;
+      let project;
+      if(layer) {
+        project = layer.project;
+      }
+      else if(window.paper && paper.project) {
+        project = paper.project;
+        layer = project.activeLayer;
+      }
+
+
+      if(project) {
+        const {characteristic, sys} = project._dp;
+        const {furn} = $p.job_prm.properties;
+
+        if(furn && sys && !sys.empty()){
+
+          const links = furn.params_links({
+            grid: {selection: {cnstr: 0}},
+            obj: {_owner: {_owner: characteristic}, layer}
+          });
+
+          if(links.length){
+            // собираем все доступные значения в одном массиве
+            const list = [];
+            links.forEach((link) => link.values.forEach((row) => list.push(this.get(row._obj.value))));
+
+            function check(v){
+              if($p.utils.is_equal(v.value, val))
+                v.selected = true;
+              return v;
+            }
+
+            const l = [];
+            $p.utils._find_rows.call(this, list, selection, (v) => l.push(check({text: v.presentation, value: v.ref})));
+
+            l.sort((a, b) => {
+              if (a.text < b.text){
+                return -1;
+              }
+              else if (a.text > b.text){
+                return 1;
+              }
+              return 0;
+            });
+            return Promise.resolve(l);
+          }
+        }
+      }
+
+      return this.constructor.prototype.get_option_list.call(this, selection, val);
+    },
+    configurable: true
   }
 
 });
