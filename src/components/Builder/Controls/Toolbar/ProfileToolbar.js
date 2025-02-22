@@ -54,7 +54,7 @@ function ProfileToolbar({editor, elm, classes}) {
   const {msg} = $p;
   const isElm = !Array.isArray(elm);
   const inset = isElm && elm.inset;
-  const impost = isElm && elm.elm_type.is('impost');
+  const allowFlip = isElm && !elm.nearest(true);
   let unlink = isElm && ((elm.b.selected && !elm.e.selected) || (elm.e.selected && !elm.b.selected));
   let link = false;
   if(unlink) {
@@ -104,7 +104,7 @@ function ProfileToolbar({editor, elm, classes}) {
         }
       }}><Link /></SmallButton>
     </Tip>}
-    {impost && <Tip title="Перевернуть профиль">
+    {allowFlip && <Tip title="Перевернуть профиль">
       <SmallButton onClick={() => elm.flip?.()}><FlipIcon /></SmallButton>
     </Tip>}
 
