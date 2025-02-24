@@ -146,20 +146,23 @@ export function handleCopy() {
 export function handleRemove() {
   const {props, tabular, state, selectedRow} = this;
   if(tabular && selectedRow){
-    const {calc_order_row} = selectedRow.characteristic;
-    selectedRow._owner.del(selectedRow);
-    this.selectedRow = null;
-    tabular.cache_actual = false;
-    tabular.setState({selected: {rowIdx: 0}});
-    if(state.count) {
-      this.setState({
-        count: state.count - 1,
+    return $p.utils.sleep(120)
+      .then(() => {
+        const {calc_order_row} = selectedRow.characteristic;
+        selectedRow._owner.del(selectedRow);
+        this.selectedRow = null;
+        tabular.cache_actual = false;
+        tabular.setState({selected: {rowIdx: 0}});
+        if(state.count) {
+          this.setState({
+            count: state.count - 1,
+          });
+        }
+        if(calc_order_row){
+          calc_order_row._owner.del(calc_order_row);
+        }
+        props.onSelect && props.onSelect(null);
       });
-    }
-    if(calc_order_row){
-      calc_order_row._owner.del(calc_order_row);
-    }
-    props.onSelect && props.onSelect(null);
   }
   else{
     $p.msg.show_msg({
@@ -199,13 +202,14 @@ function mapStateToProps(state, props) {
     handleCalck(...attr) {
       const {additions} = this;
       const {dp} = additions;
-      return dp ?
-        dp.calc_order.process_add_product_list(dp)
-          .then(() => {
-            dp.calc_order.production.sync_grid(props.dialog.wnd.elmnts.grids.production);
-          })
-        :
-        additions.handleCalck(...attr);
+      return $p.utils.sleep(120)
+        .then(() => dp ?
+          dp.calc_order.process_add_product_list(dp)
+            .then(() => {
+              dp.calc_order.production.sync_grid(props.dialog.wnd.elmnts.grids.production);
+            })
+          :
+          additions.handleCalck(...attr));
     },
     handleCancel() {
       props.handlers.handleIfaceState({
