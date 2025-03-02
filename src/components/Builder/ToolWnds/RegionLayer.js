@@ -74,9 +74,9 @@ export function region_layer({Editor, ui: {dialogs}}) {
         // создаём профили ряда
         for(const elm of profiles) {
           const {generatrix, inset: {inserts}, width} = elm;
-          if(width < 2) {
-            continue;
-          }
+          // if(width < 2) {
+          //   continue;
+          // }
           let inset = project.default_inset({elm_type: 'region', pos: elm.pos, elm});
           if(!inset || !inserts.find({inset})) {
             for(const curr of insets) {
