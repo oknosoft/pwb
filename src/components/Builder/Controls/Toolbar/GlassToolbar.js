@@ -38,12 +38,23 @@ function addImpost(elm, orienattion) {
     path.lastSegment.point = path.intersect_point(gen(right.profile));
   }
 
-  new $p.EditorInvisible.Profile({
+  const {profiles} = layer;
+  const impost = new $p.EditorInvisible.Profile({
     generatrix: path,
     layer,
-    parent: layer?.children?.profiles,
+    parent: layer.children?.profiles,
     proto: {inset, clr: top.profile.clr}
   });
+  for(const inode of 'be') {
+    const pt = impost[inode];
+    for(const profile of profiles) {
+      for(const pnode of 'be') {
+        if(profile[pnode].is_nearest(pt, true) && impost.isAbove(profile)) {
+          impost.insertBelow(profile);
+        }
+      }
+    }
+  }
 }
 
 function GlassToolbar({editor, elm, classes}) {

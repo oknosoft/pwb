@@ -6999,6 +6999,8 @@ class ToolPen extends ToolElement {
           });
           project.deselectAll();
           project.zoom_fit();
+          profiles[0].insertAbove(impost);
+          profiles[1].insertAbove(impost);
           _scope.select_tool('select_node');
           setTimeout(() => {
             project.register_change(true, () => {
@@ -7060,6 +7062,8 @@ class ToolPen extends ToolElement {
           });
           project.deselectAll();
           project.zoom_fit();
+          profiles[0].insertAbove(impost);
+          profiles[1].insertAbove(impost);
           _scope.select_tool('select_node');
           setTimeout(() => {
             project.register_change(true, () => {
